@@ -46,4 +46,8 @@ public final class FrontendPluginFactory {
     public GulpRunner getGulpRunner(){
         return new DefaultGulpRunner(defaultPlatform, workingDirectory);
     }
+    
+    public GulpRunner getFisRunner(){
+        return new DefaultFisRunner(defaultPlatform, workingDirectory);
+    }
 }
